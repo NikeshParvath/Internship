@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Soft light background */
+    color: #333; /* Dark text for readability */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+header {
+    background-color: #4CAF50; /* Vibrant green for header */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 80px; /* Space for the header */
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+ul.bucket-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.bucket-list li {
+    background-color: #e7f6e7; /* Light green background for items */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #444; /* Darker text color */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul.bucket-list li .icon {
+    margin-right: 15px;
+    font-size: 1.3rem;
+    color: #4CAF50;
+}
+
+/* Completed tasks - Green */
+ul.bucket-list li.completed {
+    background-color: #dff0d8; /* Lighter green for completed tasks */
+}
+
+ul.bucket-list li.completed .icon {
+    color: #28a745; /* Dark green for completed task icons */
+}
+
+/* Hover Effect for list items */
+ul.bucket-list li:hover {
+    transform: translateY(-5px);
+    background-color: #d4edda;
+}
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 90%;
+        padding: 20px;
+    }
+
+    ul.bucket-list li {
+        font-size: 1rem;
+    }
+}
